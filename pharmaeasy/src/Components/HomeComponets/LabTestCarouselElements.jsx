@@ -1,16 +1,22 @@
 import React from 'react';
 import {
   Box,
+  Flex,
   IconButton,
+  Stack,
+  Text,
 } from '@chakra-ui/react';
 
 import Slider from 'react-slick';
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
-
+import { BsEmojiSmile } from "react-icons/bs";
+import { GoBeaker } from "react-icons/go";
+import { MdOutlineDocumentScanner } from "react-icons/md";
+import { GrAchievement } from "react-icons/gr";
+import {labTest} from '../../MenuData/labTest';
 // Settings for the slider
-import {brands} from "../../MenuData/brands"
-import BrandsCarouselCards from './BrandsCarouselCard';
+import LabTestCarousalCards from './LabTestCarouselCards';
 const settings = {
   dots: false,
   arrows: false,
@@ -19,23 +25,21 @@ const settings = {
   autoplay: false,
   speed: 500,
   autoplaySpeed: 5000,
-  slidesToShow: 8,
+  slidesToShow: 4.2,
   slidesToScroll: 1,
 };
 
-export default function BrandsCarouselElement() {
+export default function LabTestCarouselElements() {
 
   const [slider, setSlider] = React.useState()
+
 
   return (
     <Box
       
-      height={'235px'}
-    //   border="1px solid black"
-      padding="10px"
+      height={'15rem'}
       width={'full'}
       overflow={'hidden'}
-      borderRadius="0"
         zIndex="0">
       {/* CSS files for react-slick */}
       <link
@@ -55,11 +59,11 @@ export default function BrandsCarouselElement() {
         variant="ghost"
         position="absolute"
         left={1220}
-        top={8}
+        top={6}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         color="#5a6369"
-        borderRadius="md"
+        borderRadius="lg"
         h="35px"
         transition="all 0.4s ease"
         _hover={{ bg:"white",transition:"all 0.4s ease", boxShadow:"rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.12) 0px 2px 16px 0px"}}
@@ -72,10 +76,10 @@ export default function BrandsCarouselElement() {
         aria-label="right-arrow"
         variant="ghost"
         position="absolute"
-        borderRadius="md"
+        borderRadius="lg"
         transition="all 0.4s ease"
         right={2}
-        top={8}
+        top={6}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         color="#5c656b"
@@ -87,8 +91,26 @@ export default function BrandsCarouselElement() {
       </IconButton>
       {/* Slider */}
       <Slider  {...settings} ref={(slider) => setSlider(slider)}>
-        {brands.map((elem, index) => (
-          <BrandsCarouselCards key={elem.id} elem={elem}/>
+        <Stack textAlign="left" h="14rem" paddingLeft="0" display="flex">
+            <Flex w="100%" align="center">
+                <GrAchievement/>
+                <Text px="5px"> 100+ Certified Labs</Text>
+            </Flex>
+            <Flex w="100%" align="center">
+                <BsEmojiSmile/>
+                <Text  px="5px">10000 Happy Customers</Text>
+            </Flex>
+            <Flex w="100%" align="center">
+                <GoBeaker/>
+                <Text px="5px">Free Sample Collection</Text>
+            </Flex>
+            <Flex w="100%" align="center">
+                <MdOutlineDocumentScanner/>
+                <Text px="5px">Accurate Reports</Text>
+            </Flex>
+        </Stack>
+        {labTest.map((elem, index) => (
+          <LabTestCarousalCards key={elem.id} elem={elem}/>
         ))}
       </Slider>
     </Box>
