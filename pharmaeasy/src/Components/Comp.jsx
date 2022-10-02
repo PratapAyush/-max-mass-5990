@@ -13,4 +13,3 @@ const ErrorComponents = () => {
 
 export default ErrorComponents
 
-// https://cdn.dribbble.com/users/1322726/screenshots/5695684/media/a01e5969a7eca6426880f81d8b15e0e8.gif

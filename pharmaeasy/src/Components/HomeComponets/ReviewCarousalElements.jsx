@@ -9,28 +9,28 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
 
 // Settings for the slider
-import {brands} from "../../MenuData/brands"
-import BrandsCarouselCards from './BrandsCarouselCard';
+import {reviewData} from "../../MenuData/reviews"
+import ReviewCarouselCard from './ReviewCarousalCard';
 const settings = {
   dots: false,
   arrows: false,
   fade: false,
-  infinite: false,
-  autoplay: false,
+  infinite: true,
+  autoplay: true,
   speed: 500,
-  autoplaySpeed: 5000,
-  slidesToShow: 8,
+  autoplaySpeed: 3500,
+  slidesToShow: 4,
   slidesToScroll: 1,
 };
 
-export default function BrandsCarouselElement() {
+export default function ReviewCarouselElements() {
 
   const [slider, setSlider] = React.useState()
 
   return (
     <Box
       
-      height={'235px'}
+      height={'265px'}
     //   border="1px solid black"
       padding="10px"
       width={'full'}
@@ -55,7 +55,7 @@ export default function BrandsCarouselElement() {
         variant="ghost"
         position="absolute"
         left={1220}
-        top={8}
+        top={10}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         color="#5a6369"
@@ -75,7 +75,7 @@ export default function BrandsCarouselElement() {
         borderRadius="md"
         transition="all 0.4s ease"
         right={2}
-        top={8}
+        top={10}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         color="#5c656b"
@@ -87,8 +87,8 @@ export default function BrandsCarouselElement() {
       </IconButton>
       {/* Slider */}
       <Slider  {...settings} ref={(slider) => setSlider(slider)}>
-        {brands.map((elem, index) => (
-          <BrandsCarouselCards key={elem.id} elem={elem}/>
+        {reviewData.map((elem, index) => (
+          <ReviewCarouselCard key={elem.id} elem={elem}/>
         ))}
       </Slider>
     </Box>

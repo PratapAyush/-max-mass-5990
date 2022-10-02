@@ -1,0 +1,66 @@
+.leftInd{
+    /* border: 2px solid red; */
+    width:70%;
+    height: 50rem;
+    margin-bottom: 100px ;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding: 40px 0;
+    scroll-behavior: smooth;
+}
+.leftInd::-webkit-scrollbar {
+    width: 0em;
+    height: 2em
+}
+.figure {
+    position: relative;
+    width: 90%;
+    display: flex;
+    height: 90%;
+    justify-content: center;
+}
+.figure img{
+    width: 80%;
+    /* height: 100%; */
+    margin: auto;
+}
+.image-hover{
+    position: absolute;
+  top: 0;
+  /* right: 15%; */
+  /* left: 25%; */
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .1s;
+}
+.image-main{
+    position: absolute;
+  top: 0;
+  /* right: 15%; */
+  /* left: 25%; */
+  bottom: 0;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity .1s;
+}
+.figure:hover .image-main {
+  position: absolute;
+  /* top: 0; */
+  /* right: 0; */
+  /* left: 0; */
+  /* bottom: 0; */
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .1s;
+
+}
+.figure:hover .image-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity .6s;
+
+}

@@ -13,9 +13,7 @@ const AllCatagoryDescription = () => {
             avoid the annoyance of queuing up at your local pharmacy and also
             avail of huge discounts of up to 80% OFF. Purchasing the healthcare
             requirements such as medical devices and nutritional supplements
-            that you need will no longer burn a hole in your pocket. At
-            PharmEasy, youare sure to find everything that you need because we
-            have products across all healthcare categories.
+            that you need will no longer burn a hole in your pocket.
           </p>
         </div>
         <div className="listDiv">

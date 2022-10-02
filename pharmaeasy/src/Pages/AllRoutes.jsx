@@ -2,10 +2,10 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import AllCatagory from './AllCatagory';
 import Cart from './Cart';
-import ErrorComponents from './ErrorComponents';
 import Home from './Home';
-import IndividualProduct from './IndividualProduct';
+import IndivisualProduct from './IndivisualProduct';
 import Products from './Products';
+import ErrorComponents from '../Components/Comp';
 
 const AllRoutes = () => {
   return (
@@ -16,7 +16,7 @@ const AllRoutes = () => {
           <Route path="/healthcare/products" element={<Products />} />
           <Route
             path="/healthcare/products/:id"
-            element={<IndividualProduct />}
+            element={<IndivisualProduct />}
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<ErrorComponents />} />

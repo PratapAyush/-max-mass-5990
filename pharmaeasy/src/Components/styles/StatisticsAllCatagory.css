@@ -1,0 +1,81 @@
+  .StatisticsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(143, 134, 134);
+    line-height: 19px;
+    font-size: 18px;
+    width: 100%;
+    height: 320px;
+    padding: 0 21rem;
+    border-top: 1.4px solid rgba(194, 191, 191, 0.5) ;
+    border-bottom: 1.4px solid rgba(196, 192, 192, 0.5) ;
+  }
+  .StatisticsWrapper div{
+    width: 13rem;
+    text-align: left;
+    font-size:16px;
+    height: 15rem;
+  }
+  .StatisticsWrapper img{
+    width: 22%;
+    margin-bottom:15px;
+  }
+  .StatisticsWrapper h3{
+    color: #4f585e;
+    font-weight: 700;
+    margin-bottom: 10px ;
+  }
+  .StatisticsWrapper p{
+    line-height:25px
+  }
+  .downloadAppDiv {
+    padding: 60px 200px;
+    display: flex;
+    gap: 100px;
+  }
+  .downloadAppDiv img {
+    width: 20%;
+  }
+  .downloadAppDesc{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .downloadAppDesc h2{
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    padding: 20px 0;
+  }
+  .downloadLinks {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 3.3rem;
+    justify-content:space-between;
+    align-items:center;
+  }
+.downloadLinks div{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items:center;
+    width:45%;
+    background-color: #576066;
+    color: white;
+    height:100%;
+    padding: 12px 0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.downloadLinks div:hover{
+    background-color: #3c4247;
+    transition: all 0.5s ease;
+}
+.downloadLinks img{
+    width: 25%;
+    padding: 10px;
+    /* height: 20%; */
+}

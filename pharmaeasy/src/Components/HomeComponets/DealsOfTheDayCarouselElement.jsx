@@ -12,7 +12,7 @@ import {
 import Slider from 'react-slick';
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
-import {productsData} from '../../Media/products';
+import {productsData} from '../../MenuData/products';
 // Settings for the slider
 import DealsOfTheDayCarouselCards from './DealsOfTheDayCarouselCards';
 const settings = {

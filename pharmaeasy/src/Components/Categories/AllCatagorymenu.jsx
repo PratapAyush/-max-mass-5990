@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { allCatagoryMenu } from "../../Media/allCatagoryMenu";
+import { allCatagoryMenu } from "../../MenuData/allCatagoryMenu";
 
 const AllCatagorymenu = () => {
   return (

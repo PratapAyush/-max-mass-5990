@@ -1,0 +1,32 @@
+.descriptionDiv {
+    padding: 20px 0;
+    color: rgb(85, 82, 82);
+}
+.catagoryHeading{
+    font-size: 16px;
+    font-weight:600;
+    padding: 15px 0;
+    width: 100%;
+}
+.catagoryText{
+    font-size: 16px;
+    width: 100%;
+}
+.descriptionDiv ul{
+    width: 90%;
+    list-style: none;
+}
+.descriptionDiv li{
+    padding: 6px 0;
+    width: 100%;
+}
+ ul li::before{
+    content: "\2022";
+    color: #0c9690;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1.5em;
+}
+.listDiv{
+    width: 100%;
+}
