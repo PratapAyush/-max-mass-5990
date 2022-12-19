@@ -8,6 +8,8 @@ PharmEasy is a health tech startup offering services such as teleconsultation, m
 <li>Javascript</li>
 <li>React js</li>
 ________________
+
+
 # 1.Home Page
 ![home page img](https://user-images.githubusercontent.com/92791586/167413860-96491e40-78af-4ec7-be06-e9f1b85738fa.PNG)
 
